@@ -16,6 +16,7 @@
 #include "std_digio.h"
 #include "bitbang_HD44780.h"
 #include "M74HC164B1_shift_register.h"
+#include "std_string.h"
 
 
 // DEVCFG3

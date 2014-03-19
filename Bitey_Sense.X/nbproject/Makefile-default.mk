@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c ../../libs/bitbang_HD44780/bitbang_HD44780.c ../../libs/std_digio/std_digio.c ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c ../../libs/bitbang_HD44780/bitbang_HD44780.c ../../libs/std_digio/std_digio.c ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c ../../libs/std_string/std_string.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ${OBJECTDIR}/_ext/91542677/std_digio.o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d ${OBJECTDIR}/_ext/91542677/std_digio.o.d ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ${OBJECTDIR}/_ext/91542677/std_digio.o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ${OBJECTDIR}/_ext/1897068078/std_string.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d ${OBJECTDIR}/_ext/91542677/std_digio.o.d ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d ${OBJECTDIR}/_ext/1897068078/std_string.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ${OBJECTDIR}/_ext/91542677/std_digio.o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ${OBJECTDIR}/_ext/91542677/std_digio.o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ${OBJECTDIR}/_ext/1897068078/std_string.o
 
 # Source Files
-SOURCEFILES=main.c ../../libs/bitbang_HD44780/bitbang_HD44780.c ../../libs/std_digio/std_digio.c ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c
+SOURCEFILES=main.c ../../libs/bitbang_HD44780/bitbang_HD44780.c ../../libs/std_digio/std_digio.c ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c ../../libs/std_string/std_string.c
 
 
 CFLAGS=
@@ -95,50 +95,62 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   
 	
 ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o: ../../libs/bitbang_HD44780/bitbang_HD44780.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/562458136 
 	@${RM} ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d 
 	@${RM} ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" -o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ../../libs/bitbang_HD44780/bitbang_HD44780.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" -o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ../../libs/bitbang_HD44780/bitbang_HD44780.c   
 	
 ${OBJECTDIR}/_ext/91542677/std_digio.o: ../../libs/std_digio/std_digio.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/91542677 
 	@${RM} ${OBJECTDIR}/_ext/91542677/std_digio.o.d 
 	@${RM} ${OBJECTDIR}/_ext/91542677/std_digio.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/91542677/std_digio.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/91542677/std_digio.o.d" -o ${OBJECTDIR}/_ext/91542677/std_digio.o ../../libs/std_digio/std_digio.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/91542677/std_digio.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/91542677/std_digio.o.d" -o ${OBJECTDIR}/_ext/91542677/std_digio.o ../../libs/std_digio/std_digio.c   
 	
 ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o: ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/2045227077 
 	@${RM} ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" -o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" -o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c   
+	
+${OBJECTDIR}/_ext/1897068078/std_string.o: ../../libs/std_string/std_string.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1897068078 
+	@${RM} ${OBJECTDIR}/_ext/1897068078/std_string.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1897068078/std_string.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1897068078/std_string.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/1897068078/std_string.o.d" -o ${OBJECTDIR}/_ext/1897068078/std_string.o ../../libs/std_string/std_string.c   
 	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   
 	
 ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o: ../../libs/bitbang_HD44780/bitbang_HD44780.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/562458136 
 	@${RM} ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d 
 	@${RM} ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" -o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ../../libs/bitbang_HD44780/bitbang_HD44780.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o.d" -o ${OBJECTDIR}/_ext/562458136/bitbang_HD44780.o ../../libs/bitbang_HD44780/bitbang_HD44780.c   
 	
 ${OBJECTDIR}/_ext/91542677/std_digio.o: ../../libs/std_digio/std_digio.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/91542677 
 	@${RM} ${OBJECTDIR}/_ext/91542677/std_digio.o.d 
 	@${RM} ${OBJECTDIR}/_ext/91542677/std_digio.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/91542677/std_digio.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/91542677/std_digio.o.d" -o ${OBJECTDIR}/_ext/91542677/std_digio.o ../../libs/std_digio/std_digio.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/91542677/std_digio.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/91542677/std_digio.o.d" -o ${OBJECTDIR}/_ext/91542677/std_digio.o ../../libs/std_digio/std_digio.c   
 	
 ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o: ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/2045227077 
 	@${RM} ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -MMD -MF "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" -o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o.d" -o ${OBJECTDIR}/_ext/2045227077/M74HC164B1_shift_register.o ../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c   
+	
+${OBJECTDIR}/_ext/1897068078/std_string.o: ../../libs/std_string/std_string.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1897068078 
+	@${RM} ${OBJECTDIR}/_ext/1897068078/std_string.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1897068078/std_string.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1897068078/std_string.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../../libs/M74HC164B1_shift_register" -I"../../libs/bitbang_HD44780" -I"../../libs/std_digio" -I"../../libs/std_string" -MMD -MF "${OBJECTDIR}/_ext/1897068078/std_string.o.d" -o ${OBJECTDIR}/_ext/1897068078/std_string.o ../../libs/std_string/std_string.c   
 	
 endif
 

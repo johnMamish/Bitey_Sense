@@ -8,6 +8,7 @@
       <itemPath>../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.h</itemPath>
       <itemPath>../../libs/std_digio/std_digio.h</itemPath>
       <itemPath>../../libs/bitbang_HD44780/bitbang_HD44780.h</itemPath>
+      <itemPath>../../libs/std_string/std_string.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +21,7 @@
       <itemPath>../../libs/bitbang_HD44780/bitbang_HD44780.c</itemPath>
       <itemPath>../../libs/std_digio/std_digio.c</itemPath>
       <itemPath>../../libs/M74HC164B1_shift_register/M74HC164B1_shift_register.c</itemPath>
+      <itemPath>../../libs/std_string/std_string.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -31,6 +33,7 @@
     <Elem>../../libs/bitbang_HD44780</Elem>
     <Elem>../../libs/std_digio</Elem>
     <Elem>../../libs/M74HC164B1_shift_register</Elem>
+    <Elem>../../libs/std_string</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -72,7 +75,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="..\..\libs\M74HC164B1_shift_register;..\..\libs\bitbang_HD44780;..\..\libs\std_digio"/>
+                  value="..\..\libs\M74HC164B1_shift_register;..\..\libs\bitbang_HD44780;..\..\libs\std_digio;..\..\libs\std_string"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="isolate-each-function" value="false"/>
         <property key="make-warnings-into-errors" value="false"/>

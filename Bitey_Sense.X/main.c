@@ -5,7 +5,7 @@
 
 //the force sensor is put in a resistor-divider circuit with a second resistor
 //whose resistance is given by RESISTOR_DIVIDER
-#define RESISTOR_DIVIDER 43500
+#define RESISTOR_DIVIDER 200000
 
 //variable to hold bite ADC result
 uint32_t bite = 0;
